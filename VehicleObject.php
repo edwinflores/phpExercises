@@ -1,5 +1,5 @@
 <?php
-	class Vehicle{
+	class Vehicle {
 		/*Public Properties*/
 
 		public 	$color;
@@ -30,5 +30,11 @@
 		public function drive() {
 			echo 'VROOM!';
 		}
+
+		// "Stops" the vehicle
+		public function stop() {
+			echo 'SCREECH <br />';
+		}
+
 	}
 ?>
