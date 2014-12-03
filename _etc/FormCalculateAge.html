@@ -1,0 +1,31 @@
+<! -Listing Program: FormCalculateAge.html-->
+<html>
+<head>
+<title>Form for Age Calculation</title>
+</head>
+
+<body>
+	<form action="ageCalculator.php" method="POST">
+	<table width="200" border="0">
+		<caption>
+			Fill the form below:
+		</caption>
+		<tr>
+			<td width="50">Name</td>
+			<td width="148">
+				<input name="nm" type="text" id="nm" />
+			</td>
+		</tr>
+		<tr>
+			<td>Birthday</td>
+			<td>
+			<input type="text" name="day" size="3" />/
+			<input type="text" name="month" size="3" />/
+			<input type="text" name="year" size="4" />
+			</td>
+		</tr>
+	</table>
+		<input type="submit" name="Submit" value="Submit" />
+	</form>
+</body>
+</html>
