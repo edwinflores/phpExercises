@@ -52,13 +52,22 @@
 					Print '<td align="center">' . $row['details'] . "</td>";
 					Print '<td align="center">' . $row['date_posted'] . " - " . $row['time_posted'] ."</td>";
 					Print '<td align="center">' . $row['date_edited'] . " - " . $row['time_edited'] ."</td>";
-					Print '<td align="center"><a href="edit.php">edit</a> </td>';
-					Print '<td align="center"><a href="delete.php">delete</a> </td>';
+					Print '<td align="center"><a href="edit.php?id='. $row['id'] . '">edit</a> </td>';
+					Print '<td align="center"><a href="#" onclick="confirmationPrompt('.$row['id'].')">delete</a></td>';
 					Print '<td align="center">' . $row['public'] . "</td>";
 				Print "</tr>";
 					
 			}
 		?>
 	</table>
+	<!--Java Script code denoted by <script>-->
+	<script>
+		function confirmationPrompt(id){
+			var r=confirm("Are you certain you wish to delete this record?");
+			if (r==true){
+				window.location.assign("delete.php?id=" + id);
+			}
+		}
+	</script>
 	</body>	
 </html>
