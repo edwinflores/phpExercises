@@ -1,0 +1,6 @@
+git rebase master // means move work from different commit directly 				onto the work from master
+		  // note: current checkout is in different branch
+then use:
+
+git rebase bugFix // to update the master 
+
